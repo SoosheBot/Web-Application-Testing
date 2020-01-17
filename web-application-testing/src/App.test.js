@@ -32,3 +32,11 @@ test('adds 3 points to Lions current score on click', () => {
   expect(actual).toBe(expected);
   expect(actual).not.toBe(4);
 });
+
+test('adds 1 point to Lions current score on click', () => {
+  let actual = addFoulBall(0);
+  let expected = 1;
+  expect(actual).toBe(expected);
+  expect(actual).not.toBe(2);
+
+});
