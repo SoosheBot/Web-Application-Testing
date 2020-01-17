@@ -15,7 +15,13 @@ test('Title card is visible', () => {
 test('adds 1 point to the Lions current score on click', () => {
   let actual = addHits(0);
   let expected = 1;
-
   expect(actual).toBe(expected);
   expect(actual).not.toBe(5);
+});
+
+test('Adds 4 point to the Lions current score on click', () => {
+  let actual = addRuns(0);
+  let expected = 4;
+  expect(actual).toBe(expected);
+  expect(actual).not.toBe(9);
 });
